@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Parser</title>
+</head>
+<body>
+    <h1>PDF Parser</h1>
+
+    <form action="/parse-pdf" method="POST" enctype="multipart/form-data">
+        <input type="file" name="pdfFile" required>
+        <button type="submit">Parse PDF</button>
+    </form>
+
+    <% if (typeof code !== 'undefined') { %>
+        <h2>Summarized PDF Text:</h2>
+        <p><%= code %></p>
+    <% } %>
+
+    <h2>Ask a Question</h2>
+    <form action="/answer-question" method="POST">
+        <input type="text" name="question" placeholder="Enter your question" required>
+        <input type="hidden" name="history" value="<%= JSON.stringify(history) %>">
+        <button type="submit">Get Answer</button>
+    </form>
+
+    <% if (typeof answer !== 'undefined') { %>
+        <h2>Answer:</h2>
+        <p><%= answer %></p>
+    <% } %>
+
+    <% if (typeof history !== 'undefined') { %>
+        <h2>Conversation History:</h2>
+        <ul>
+            <% history.forEach(message => { %>
+                <li><strong><%= message.role %>:</strong> <%= message.parts[0].text %></li>
+            <% }) %>
+        </ul>
+    <% } %>
+</body>
+</html>
