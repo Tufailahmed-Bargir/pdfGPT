@@ -91,7 +91,7 @@ Thank you for being here!
 
 ```
 
- if you're using this repo for your course project, I will be more than happy to know how does this project helped you.
+ if you're using this repo for your cproject, I will be more than happy to know how does this project helped you.
 
  
 
