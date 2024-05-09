@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const multer = require('multer');
 const PDFParser = require('pdf-parse');
+require('dotenv').config();
+
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const app = express();
@@ -32,7 +34,7 @@ app.post('/parse-pdf', upload.single('pdfFile'), async (req, res) => {
 
         const queryCode = `summarize the pdf text in 50 words ${pdfText}`;
 
-        const API_KEY = 'AIzaSyCeGzZmKaRE5p5LuhatyKTP7z42gSHTt54';
+        const API_KEY = process.env.KEY_API;
         const genAI = new GoogleGenerativeAI(API_KEY);
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest" });
 
@@ -73,7 +75,7 @@ app.post('/answer-question', async (req, res) => {
         const question = req.body.question;
         const history = JSON.parse(req.body.history);
 
-        const API_KEY = 'AIzaSyCeGzZmKaRE5p5LuhatyKTP7z42gSHTt54';
+        const API_KEY = process.env.KEY_API;
         const genAI = new GoogleGenerativeAI(API_KEY);
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest" });
 
