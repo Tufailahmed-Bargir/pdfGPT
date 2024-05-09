@@ -6,13 +6,11 @@
 ![HTML](https://img.shields.io/badge/frontend-html-orange.svg?logo=html5&style=flat-square) 
 ![CSS](https://img.shields.io/badge/frontend-css-yellowgreen.svg?logo=css3&style=flat-square)
 ![JavaScript](https://img.shields.io/badge/frontend-js-ff69b4.svg?logo=javascript&style=flat-square)
-![Express](https://img.shields.io/badge/backend-php-blue.svg?logo=php&style=flat-square) 
-![Bootstrap](https://img.shields.io/badge/database-mysql-lightgray.svg?logo=mysql&logoColor=white&style=flat-square) 
-![Gemini API](https://img.shields.io/badge/database-mysql-lightgray.svg?logo=mysql&logoColor=white&style=flat-square) 
+ 
 
 - Front End - **HTML**, **CSS**,**Bootstrap**,
 - Back End - **Express**, **ejs**
-- Gemini api
+- LLM Model- **Gemini**
  
 
 ## Requirements
@@ -31,6 +29,14 @@ The source code of this project is written in **Express**. So, you'll require **
 4. Run/ Start the server by **node index.js**
 5. then go to  **`localhost/3000`** in your browser.
 
+
+## Want to Contribute?
+
+1. Make the ui responsive
+2. make the ui more beautiful
+3. add more features
+4. create issues on there own
+5. create a pull request
 ## Need help?
 
 ```javascript
@@ -70,7 +76,7 @@ Thank you for being here!
 
 ```
 
- if you're using this repo for your mini/course project. I will be more than happy to know how does this project helped you.
+ if you're using this repo for your course project, I will be more than happy to know how does this project helped you.
 
  
 
