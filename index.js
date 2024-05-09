@@ -32,7 +32,7 @@ app.post('/parse-pdf', upload.single('pdfFile'), async (req, res) => {
         const pdfText = data.text;
         console.log(pdfText);
 
-        const queryCode = `summarize the pdf text in 50 words ${pdfText}`;
+        const queryCode = `summarize the pdf text in 50 words ${pdfText} but don't include any special characters`;
 
         const API_KEY = process.env.KEY_API;
         const genAI = new GoogleGenerativeAI(API_KEY);
