@@ -40,7 +40,7 @@ The source code of this project is written in **Express**. So, you'll require **
 
 1. Fork this repo and make a clone of it and go to the **cd pdfGPT**  directory
 2. make **npm install**
-3. paste your Gemini api key in .env file in **KEY_API**
+3. Create a **.env** file and paste your Gemini api key in .env file in **KEY_API='AIxxxxxxxxxxxxxxxxxxxxxxxxxxxx'**
 4. Run/ Start the server by **node index.js**
 5. then go to  **`localhost/3000`** in your browser.
 
