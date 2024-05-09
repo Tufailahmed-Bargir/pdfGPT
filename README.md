@@ -33,6 +33,7 @@ The source code of this project is written in **Express**. So, you'll require **
 
 ## Installing 
 - Download [Nodejs](https://nodejs.org/en)
+- Get Gemini api [Gemini api](https://ai.google.dev/)
  
 
 ## How to run?
