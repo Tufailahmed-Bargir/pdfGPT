@@ -4,12 +4,15 @@
 ## The main interface looks like this
 ![Screenshot 2024-05-09 231930](https://github.com/Tufailahmed-Bargir/pdfGPT/assets/142114244/804a4f99-8bd3-438c-95a7-3291015aac16)
 
-## after uploading the pdf it will automatically gives the small summary of the pdf
-![Screenshot 2024-05-09 232107](https://github.com/Tufailahmed-Bargir/pdfGPT/assets/142114244/586c1781-d7d4-480a-8a08-a9b38e865b92)
+## After uploading the pdf it will automatically gives the small summary of the pdf
+![ss](https://github.com/Tufailahmed-Bargir/pdfGPT/assets/142114244/683109c6-2d84-479e-8659-5dd80b8a5a49)
 
 
-# also you can ask the questions 
-![Screenshot 2024-05-09 232125](https://github.com/Tufailahmed-Bargir/pdfGPT/assets/142114244/4253db05-3c12-4432-9b24-499f1c7b89ab)
+
+# Also you can ask the questions and the you get response
+![Screenshot 2024-05-09 232125](https://github.com/Tufailahmed-Bargir/pdfGPT/assets/142114244/198c09a8-d120-4671-b4cb-f50af067129f)
+
+
 
 
 ## Technology Stack Used
