@@ -32,13 +32,17 @@
          
       <!-- next to navbar -->
       <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto " src="./logo.jpg" alt="" width="150" height="70" id="logo">
+        <!-- <img class="d-block mx-auto " src="./logo.jpg" alt="" width="150" height="70" id="logo"> -->
 <style>
   #logo{
     border-radius: 50%;
   }
+  body{
+  background-color: #100D25;
+  color:white;
+}
 </style>
-        <h1 class="display-5 fw-bold text-body-emphasis">chat with your pdf</h1>
+        <h1 class="display-5 fw-bold text-body-white">chat with your pdf</h1>
      
        
        <div class="container w-50">
@@ -47,7 +51,7 @@
             <h2>  Enter the pdf to chat with :</h2> <br>
             <form action="/parse-pdf" method="POST" enctype="multipart/form-data">
               <input type="file" name="pdfFile" required>
-              <button type="submit">Parse PDF</button>
+              <button type="submit" class="btn btn-success">Parse PDF</button>
           </form>
       </div>
       </div>
@@ -75,7 +79,7 @@
         <form action="/answer-question" method="POST" class="d-flex justify-content-center align-items-center" >
           <input type="text" name="question" placeholder="Enter your question" required id="box" >
           <input type="hidden" name="history" value="<%= JSON.stringify(history) %>">
-          <button type="submit" id="btn" >submit</button>
+          <button type="submit" id="btn" class="btn btn-success">submit</button>
       </form>
           
       
