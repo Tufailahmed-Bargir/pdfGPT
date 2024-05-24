@@ -34,7 +34,7 @@ app.post('/parse-pdf', upload.single('pdfFile'), async (req, res) => {
 
         const queryCode = `summarize the pdf text in 50 words ${pdfText} but don't include any special characters`;
 
-        const API_KEY = 'AIzaSyCeGzZmKaRE5p5LuhatyKTP7z42gSHTt54';
+        const API_KEY = 'your api key here';
         const genAI = new GoogleGenerativeAI(API_KEY);
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest" });
 
@@ -75,7 +75,7 @@ app.post('/answer-question', async (req, res) => {
         const question = req.body.question;
         const history = JSON.parse(req.body.history);
 
-        const API_KEY = 'AIzaSyCeGzZmKaRE5p5LuhatyKTP7z42gSHTt54';
+        const API_KEY = 'your api key here';
         const genAI = new GoogleGenerativeAI(API_KEY);
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest" });
 
